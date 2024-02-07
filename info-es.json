@@ -1,7 +1,7 @@
 {
     "informacion_personal": {
         "label": "Full Stack Developer con multiples años de experiencia en desarrollo de software",
-        "summary": "Desarrollador Fullstack independiente con más 2 años de experiencia, destacándome en entornos frontend y backend. Desde 2023, contribuyo como desarrollador de software. Resido en Cartagena, Colombia. Experto en crear soluciones integrales, óptimas y escalables."
+        "summary": "Soy desarrollador fullstack con más de 3 años de experiencia en la industria, actualmente trabajo como Desarrollador de software en el departamento de innovación y desarrollo de la cadena hotelera Geh suites siendo líder del área de innovación enfocada a la optimización y mejora de atención con el cliente. Me especializo en frontend, en la creación de interfaces y maquetación de páginas web, siempre buscando la optimización y la escalabilidad."
     },
     "work": [
         {
@@ -17,7 +17,7 @@
             "position": "Fullstack developer",
             "url": null,
             "startDate": "2023-02-10",
-            "endDate": "2022-08-20",
+            "endDate": "2023-08-20",
             "summary": "Desarrolle un sistema de creación, gestión y almacenamiento de órdenes para el restaurante Mr. Rustico, creando tanto en la interfaz manejando NextJs como tecnología base del frontend enfocandome en el diseño responsivo y en el buen manejo de los datos, como el backend del que se alimenta utilizando NestJs y PostgreSQL como base de datos principal.",
             "highlights": [
                 "Started the company"

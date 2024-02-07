@@ -1,7 +1,9 @@
 ---
 import Section from "../Section.astro";
+import { informacion_personal } from "@cv-es";
+const { summary } = informacion_personal;
 ---
 
-<Section title="About">
-  <p>texto</p>
+<Section title="Sobre mi">
+  <p>{summary}</p>
 </Section>

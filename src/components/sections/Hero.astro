@@ -1,6 +1,7 @@
 ---
 import Section from "../Section.astro";
 import Mail from "@/icons/Mail.astro";
+import Mongo from "@/icons/mongo.astro";
 import GitHub from "@/icons/GitHub.astro";
 import LinkedIn from "@/icons/LinkedIn.astro";
 import Phone from "@/icons/Phone.astro";
@@ -23,7 +24,7 @@ const SOCIAL_ICONS: Record<string, any> = {
       <h1>{name}</h1>
       <h2 class="label">{label}</h2>
       <span>
-        <WorldMap />
+        <Mongo />
         {city}, {region}
       </span>
       <footer>
@@ -139,11 +140,6 @@ const SOCIAL_ICONS: Record<string, any> = {
     aspect-ratio: 1/1;
     object-fit: cover;
     width: 130px;
-    border: 1px solid #444;
-    padding: 0.1rem;
     border-radius: 16px;
-    /* -webkit-box-shadow: -3px 5px 11px -7px rgba(0, 0, 0, 1);
-    -moz-box-shadow: -3px 5px 11px -7px rgba(0, 0, 0, 1);
-    box-shadow: -3px 5px 11px -7px rgba(0, 0, 0, 1);  */
   }
 </style>
