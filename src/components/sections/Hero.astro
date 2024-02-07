@@ -1,16 +1,29 @@
 ---
-import { basics } from "@cv";
-const { name, label, image, location, profiles, phone, email } = basics;
+import Section from "../Section.astro";
+import Mail from "@/icons/Mail.astro";
+import GitHub from "@/icons/GitHub.astro";
+import LinkedIn from "@/icons/LinkedIn.astro";
+import Phone from "@/icons/Phone.astro";
+import WorldMap from "@/icons/WorldMap.astro";
+import { basics } from "@cv-ge";
+const { name, image, location, phone, email, profiles } = basics;
 const { region, city } = location;
+import { informacion_personal } from "@cv-es";
+const { label } = informacion_personal;
+
+const SOCIAL_ICONS: Record<string, any> = {
+  GitHub,
+  LinkedIn,
+};
 ---
 
-<section>
+<Section>
   <div class="container">
     <div class="info">
       <h1>{name}</h1>
-      <h2>{label}</h2>
+      <h2 class="label">{label}</h2>
       <span>
-        <!-- Icono -->
+        <WorldMap />
         {city}, {region}
       </span>
       <footer>
@@ -22,9 +35,36 @@ const { region, city } = location;
               target="_blank"
               rel="noopener noreferrer"
             >
-              🪧
+              <Mail title={`Enviar email a ${name} al correo ${email}`} />
             </a>
           )
+        }
+        {
+          phone && (
+            <a
+              href={`tel:${phone}`}
+              title={`Llamar a ${name} al telefono ${email}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Phone title={`Llamar a ${name} al telefono ${email}`} />
+            </a>
+          )
+        }
+        {
+          profiles.map(({ network, url, username }) => {
+            const Icon = SOCIAL_ICONS[network];
+            return (
+              <a
+                href={url}
+                title={`Visitar a ${username} en ${network}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon />
+              </a>
+            );
+          })
         }
       </footer>
     </div>
@@ -32,11 +72,78 @@ const { region, city } = location;
       <img src={image} alt={name} />
     </figure>
   </div>
-</section>
+</Section>
 
 <style>
-  section {
-    max-width: 700px;
-    margin: 0 auto 72px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-right: 32px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .label {
+    font-family: Menlo, Monaco, "Lucida console", "Courier New", Courier,
+      monospace;
+    color: #666;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-wrap: balance;
+  }
+
+  span {
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.85rem;
+    letter-spacing: -0.05rem;
+  }
+
+  footer {
+    display: flex;
+    gap: 4px;
+    margin-top: 8px;
+  }
+
+  footer a {
+    color: #777;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 4px;
+    width: 32px;
+    height: 32px;
+    transition: all 0.3s ease;
+  }
+
+  footer a:hover {
+    background: #eee;
+    border: 1px solid #ddd;
+  }
+
+  img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 130px;
+    border: 1px solid #444;
+    padding: 0.1rem;
+    border-radius: 16px;
+    /* -webkit-box-shadow: -3px 5px 11px -7px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -3px 5px 11px -7px rgba(0, 0, 0, 1);
+    box-shadow: -3px 5px 11px -7px rgba(0, 0, 0, 1);  */
   }
 </style>
