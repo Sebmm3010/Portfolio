@@ -1,0 +1,297 @@
+{
+    "informacion_personal": {
+        "label": "Full Stack Developer con multiples años de experiencia en desarrollo de software",
+        "summary": "Desarrollador Fullstack independiente con más 2 años de experiencia, destacándome en entornos frontend y backend. Desde 2023, contribuyo como desarrollador de software. Resido en Cartagena, Colombia. Experto en crear soluciones integrales, óptimas y escalables."
+    },
+    "work": [
+        {
+            "name": "Geh suites",
+            "position": "Desarrollador de software",
+            "url": "https://www.gehsuites.com/es",
+            "startDate": "2023-10-27",
+            "endDate": null,
+            "summary": "Lidero el área del desarrollo enfocada al manejo y atención de huéspedes, desarrollando integraciones en múltiples entornos y la creación de APIS con node.js para el manejo y distribución de información, así como impulso la integración de IA para la optimización de la atención a cliente y huéspedes mediante la creación de asistente potenciados con esta tecnología."
+        },
+        {
+            "name": "Mr. Rustico",
+            "position": "Fullstack developer",
+            "url": null,
+            "startDate": "2023-02-10",
+            "endDate": "2022-08-20",
+            "summary": "Desarrolle un sistema de creación, gestión y almacenamiento de órdenes para el restaurante Mr. Rustico, creando tanto en la interfaz manejando NextJs como tecnología base del frontend enfocandome en el diseño responsivo y en el buen manejo de los datos, como el backend del que se alimenta utilizando NestJs y PostgreSQL como base de datos principal.",
+            "highlights": [
+                "Started the company"
+            ]
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "Autonomic Jump",
+            "position": "trainee",
+            "url": "https://www.autonomicmind.com/es/jump",
+            "startDate": "2023",
+            "endDate": null,
+            "summary": "Entrenamiento mediante hecho por la empresa Autonomic mind haciendo tareas de la vida real en la que se evalúa y se retroalimenta y se premia la innovación de las respuestas dadas."
+        }
+    ],
+    "education": [
+        {
+            "institution": "Universidad de Cartagena",
+            "url": "https://www.unicartagena.edu.co/",
+            "area": "Ingeniero de Sistemas",
+            "studyType": "Pregrado",
+            "startDate": "2017-07",
+            "endDate": null,
+            "score": null,
+            "courses": null
+        },
+        {
+            "institution": "Centro colombo americano",
+            "url": "https://www.colombocartagena.edu.co/",
+            "area": "Ingles como segundo idioma",
+            "studyType": "Curso",
+            "startDate": "2013",
+            "endDate": "2014",
+            "score": "C1",
+            "courses": null
+        }
+    ],
+    "awards": [
+        {
+            "title": "Award",
+            "date": "2014-11-01",
+            "awarder": "Company",
+            "summary": "There is no spoon."
+        }
+    ],
+    "certificates": [
+        {
+            "name": "Certificate",
+            "date": "2021-11-07",
+            "issuer": "Company",
+            "url": "https://certificate.com"
+        }
+    ],
+    "publications": [
+        {
+            "name": "Publication",
+            "publisher": "Company",
+            "releaseDate": "2014-10-01",
+            "url": "https://publication.com",
+            "summary": "Description…"
+        }
+    ],
+    "skills": [
+        {
+            "name": "HTML",
+            "level": "Master",
+            "keywords": [
+                "Desarrollo Web",
+                "Desarrollo fullstack",
+                "Desarrollo de software",
+                "Frontend"
+            ]
+        },
+        {
+            "name": "CSS",
+            "level": "Master",
+            "keywords": [
+                "Desarrollo Web",
+                "Desarrollo fullstack",
+                "Desarrollo de software",
+                "Frontend",
+                "Diseño Responsive"
+            ]
+        },
+        {
+            "name": "JavaScript",
+            "level": "Master",
+            "keywords": [
+                "Desarrollo Web",
+                "Frontend",
+                "Backend",
+                "Fullstack"
+            ]
+        },
+        {
+            "name": "Tailwind",
+            "level": "Avanzado",
+            "keywords": [
+                "Desarrollo Web",
+                "Frontend",
+                "CSS Framework",
+                "Diseño Responsive"
+            ]
+        },
+        {
+            "name": "TypeScript",
+            "level": "Avanzado",
+            "keywords": [
+                "Desarrollo Web",
+                "Frontend",
+                "Backend",
+                "JavaScript Superset"
+            ]
+        },
+        {
+            "name": "Node",
+            "level": "Avanzado",
+            "keywords": [
+                "Desarrollo Web",
+                "Backend",
+                "JavaScript",
+                "Servidor"
+            ]
+        },
+        {
+            "name": "Nest.js",
+            "level": "Avanzado",
+            "keywords": [
+                "Desarrollo Web",
+                "Backend",
+                "JavaScript",
+                "Servidor",
+                "APIS"
+            ]
+        },
+        {
+            "name": "PostgresSQL",
+            "level": "Avanzado",
+            "keywords": [
+                "Bases de Datos",
+                "SQL",
+                "Almacenamiento de Datos",
+                "Backend"
+            ]
+        },
+        {
+            "name": "MongoDB",
+            "level": "Avanzado",
+            "keywords": [
+                "Bases de Datos",
+                "NoSQL",
+                "Almacenamiento de Datos",
+                "Backend"
+            ]
+        },
+        {
+            "name": "Git",
+            "level": "Avanzado",
+            "keywords": [
+                "Control de Versiones",
+                "Colaboración",
+                "Código Fuente"
+            ]
+        },
+        {
+            "name": "GitHub",
+            "level": "Avanzado",
+            "keywords": [
+                "Control de Versiones",
+                "Colaboración",
+                "Código Fuente",
+                "Git"
+            ]
+        },
+        {
+            "name": "Next.js",
+            "level": "Avanzado",
+            "keywords": [
+                "Desarrollo Web",
+                "Frontend",
+                "React Framework",
+                "SSR",
+                "Static Generation"
+            ]
+        },
+        {
+            "name": "React",
+            "level": "Avanzado",
+            "keywords": [
+                "Desarrollo Web",
+                "Frontend",
+                "JavaScript Library",
+                "UI"
+            ]
+        },
+        {
+            "name": "Docker",
+            "level": "Avanzado",
+            "keywords": [
+                "Desarrollo Web",
+                "Frontend",
+                "JavaScript Library",
+                "UI"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "Spanish",
+            "fluency": "Native speaker"
+        },
+        {
+            "language": "English",
+            "fluency": "C1"
+        }
+    ],
+    "references": [
+        {
+            "name": "Jane Doe",
+            "reference": "Reference…"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Mr. Rustico",
+            "isActive": true,
+            "description": "Gestor de ordenes en tiempo real.",
+            "highlights": [
+                "Fullstack",
+                "Terminado",
+                "Next.js",
+                "Nest.js",
+                "PostgreSQL",
+                "Typescript"
+            ],
+            "url": "https://github.com/Sebmm3010/rustico-frontend"
+        },
+        {
+            "name": "Plavih",
+            "isActive": true,
+            "description": "Plataforma de entrenamiento de personal centrada en personal hotelero",
+            "highlights": [
+                "Frontend",
+                "Html",
+                "Css"
+            ],
+            "url": "https://plavih.com/"
+        },
+        {
+            "name": "Romi call",
+            "isActive": true,
+            "description": "API de asistente de reservas potenciada con IA de OpenAi.",
+            "highlights": [
+                "Javascript",
+                "Node",
+                "IA",
+                "OpenAi",
+                "API"
+            ],
+            "url": "https://www.gehsuites.com/es"
+        },
+        {
+            "name": "Romi guess",
+            "isActive": true,
+            "description": "Asistente de whatsapp que permite tomar ordenes y dar informacion sobre hoteles de la cadena GEH suites a huespedes validados en una base de datos",
+            "highlights": [
+                "whatsapp",
+                "Node",
+                "MongoDB",
+                "API",
+                "Multiples-integraciones"
+            ],
+            "url": "https://www.gehsuites.com/es"
+        }
+    ]
+}

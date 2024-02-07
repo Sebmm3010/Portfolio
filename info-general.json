@@ -1,0 +1,28 @@
+{
+    "basics": {
+        "name": "Sebastian Madero Mercado",
+        "image": "/img.jpg",
+        "email": "rockmadero@gmail.com",
+        "phone": "+57 300-222-6417",
+        "url": "https://www.linkedin.com/in/sebastian-madero-mercado/",
+        "location": {
+            "address": "",
+            "postalCode": "130004",
+            "city": "Cartagena, Bolivar",
+            "countryCode": "CO",
+            "region": "Colombia"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "username": "Sebastian madero mercado",
+                "url": "https://www.linkedin.com/in/sebastian-madero-mercado/"
+            },
+            {
+                "network": "GitHub",
+                "username": "Sebmm3010",
+                "url": "https://github.com/Sebmm3010"
+            }
+        ]
+    }
+}
