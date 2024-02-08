@@ -1,13 +1,13 @@
 ---
 import Section from "../Section.astro";
 import Mail from "@/icons/Mail.astro";
-import Mongo from "@/icons/mongo.astro";
 import GitHub from "@/icons/GitHub.astro";
+import Webpage from "@/icons/webpage.astro";
 import LinkedIn from "@/icons/LinkedIn.astro";
 import Phone from "@/icons/Phone.astro";
 import WorldMap from "@/icons/WorldMap.astro";
 import { basics } from "@cv-ge";
-const { name, image, location, phone, email, profiles } = basics;
+const { name, image, url, location, phone, email, profiles } = basics;
 const { region, city } = location;
 import { informacion_personal } from "@cv-es";
 const { label } = informacion_personal;
@@ -16,6 +16,10 @@ const SOCIAL_ICONS: Record<string, any> = {
   GitHub,
   LinkedIn,
 };
+
+const linkedinUrl = profiles
+  .find(({ network }) => network === "LinkedIn")
+  ?.url.split("w.")[1];
 ---
 
 <Section>
@@ -24,10 +28,16 @@ const SOCIAL_ICONS: Record<string, any> = {
       <h1>{name}</h1>
       <h2 class="label">{label}</h2>
       <span>
-        <Mongo />
+        <WorldMap />
         {city}, {region}
       </span>
-      <footer>
+      <footer class="print print-info">
+        -Mail: {email}
+        <br /> -Tel: {phone}
+        <br /> -Website: {url}
+        <br />-Linkedin: {linkedinUrl}
+      </footer>
+      <footer class="no-print">
         {
           email && (
             <a
@@ -49,6 +59,18 @@ const SOCIAL_ICONS: Record<string, any> = {
               rel="noopener noreferrer"
             >
               <Phone title={`Llamar a ${name} al telefono ${email}`} />
+            </a>
+          )
+        }
+        {
+          (
+            <a
+              href={url}
+              title="Ir a pagina web"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Webpage title="Ir a pagina web" />
             </a>
           )
         }
@@ -103,6 +125,10 @@ const SOCIAL_ICONS: Record<string, any> = {
     text-wrap: balance;
   }
 
+  .print-info {
+    color: #666;
+  }
+
   span {
     color: #666;
     display: flex;
@@ -113,6 +139,7 @@ const SOCIAL_ICONS: Record<string, any> = {
   }
 
   footer {
+    font-size: 0.8rem;
     display: flex;
     gap: 4px;
     margin-top: 8px;

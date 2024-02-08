@@ -1,7 +1,69 @@
 ---
 import Section from "../Section.astro";
+import Css from "@/icons/css.astro";
+import Next from "@/icons/next.astro";
+import Docker from "@/icons/docker.astro";
+import Git from "@/icons/git.astro";
+import GitHub from "@/icons/GitHub.astro";
+import Html from "@/icons/html.astro";
+import JavaScript from "@/icons/javascript.astro";
+import MongoDB from "@/icons/mongo.astro";
+import Nest from "@/icons/nest.astro";
+import Node from "@/icons/node.astro";
+import PostgresSQL from "@/icons/postgres.astro";
+import React from "@/icons/react.astro";
+import Tailwind from "@/icons/tailwind.astro";
+import TypeScript from "@/icons/type.astro";
+
+import { skills } from "@cv-ge";
+
+const SOCIAL_ICONS: Record<string, any> = {
+  Css,
+  Next,
+  Docker,
+  Git,
+  GitHub,
+  Html,
+  JavaScript,
+  MongoDB,
+  Nest,
+  Node,
+  PostgresSQL,
+  React,
+  Tailwind,
+  TypeScript,
+};
 ---
 
 <Section title="Skills">
-  <p>texto</p>
+  <ul>
+    {
+      skills.map(({ name, icon }) => {
+        const Icon = SOCIAL_ICONS[icon];
+        return (
+          <li>
+            <Icon />
+            <span>{name}</span>
+          </li>
+        );
+      })
+    }
+  </ul>
 </Section>
+
+<style>
+  ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  li {
+    border-radius: 6px;
+    background: #eee;
+    color: #111;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem;
+  }
+</style>

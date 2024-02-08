@@ -1,0 +1,86 @@
+{
+    "basics": {
+        "name": "Sebastian Madero Mercado",
+        "image": "/img.jpg",
+        "email": "rockmadero@gmail.com",
+        "phone": "+57 300-222-6417",
+        "url": "sebasDev.tech",
+        "location": {
+            "address": "",
+            "postalCode": "130004",
+            "city": "Cartagena, Bolivar",
+            "countryCode": "CO",
+            "region": "Colombia"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "username": "Sebastian madero mercado",
+                "url": "https://www.linkedin.com/in/sebastian-madero-mercado/"
+            },
+            {
+                "network": "GitHub",
+                "username": "Sebmm3010",
+                "url": "https://github.com/Sebmm3010"
+            }
+        ]
+    },
+    "skills": [
+        {
+            "name": "HTML",
+            "icon": "Html"
+        },
+        {
+            "name": "CSS",
+            "icon": "Css"
+        },
+        {
+            "name": "JavaScript",
+            "icon": "JavaScript"
+        },
+        {
+            "name": "Tailwind",
+            "icon": "Tailwind"
+        },
+        {
+            "name": "TypeScript",
+            "icon": "TypeScript"
+        },
+        {
+            "name": "Node.js",
+            "icon": "Node"
+        },
+        {
+            "name": "Nest.js",
+            "icon": "Nest"
+        },
+        {
+            "name": "PostgresSQL",
+            "icon": "PostgresSQL"
+        },
+        {
+            "name": "MongoDB",
+            "icon": "MongoDB"
+        },
+        {
+            "name": "Git",
+            "icon": "Git"
+        },
+        {
+            "name": "GitHub",
+            "icon": "GitHub"
+        },
+        {
+            "name": "Next.js",
+            "icon": "Next"
+        },
+        {
+            "name": "React",
+            "icon": "React"
+        },
+        {
+            "name": "Docker",
+            "icon": "Docker"
+        }
+    ]
+}

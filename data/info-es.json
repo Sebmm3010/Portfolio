@@ -1,0 +1,156 @@
+{
+    "informacion_personal": {
+        "label": "Full Stack Developer con multiples años de experiencia en desarrollo de software",
+        "summary": "Soy desarrollador fullstack con más de 3 años de experiencia en la industria, actualmente trabajo como Desarrollador de software en el departamento de innovación y desarrollo de la cadena hotelera Geh suites siendo líder del área de innovación enfocada a la optimización y mejora de atención con el cliente. Me especializo en frontend, en la creación de interfaces y maquetación de páginas web, siempre buscando la optimización y la escalabilidad."
+    },
+    "work": [
+        {
+            "name": "Geh suites",
+            "position": "Desarrollador de software",
+            "url": "https://www.gehsuites.com/es",
+            "startDate": "2023-10-27",
+            "endDate": null,
+            "summary": "Lidero el área del desarrollo enfocada al manejo y atención de huéspedes, desarrollando integraciones en múltiples entornos y la creación de APIS con node.js para el manejo y distribución de información, así como impulso la integración de IA para la optimización de la atención a cliente y huéspedes mediante la creación de asistente potenciados con esta tecnología."
+        },
+        {
+            "name": "Mr. Rustico",
+            "position": "Fullstack developer",
+            "url": null,
+            "startDate": "2023-02-10",
+            "endDate": "2023-08-20",
+            "summary": "Desarrolle un sistema de creación, gestión y almacenamiento de órdenes para el restaurante Mr. Rustico, creando tanto en la interfaz manejando NextJs como tecnología base del frontend enfocandome en el diseño responsivo y en el buen manejo de los datos, como el backend del que se alimenta utilizando NestJs y PostgreSQL como base de datos principal.",
+            "highlights": [
+                "Started the company"
+            ]
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "Autonomic Jump",
+            "position": "trainee",
+            "url": "https://www.autonomicmind.com/es/jump",
+            "startDate": "2023",
+            "endDate": null,
+            "summary": "Entrenamiento mediante hecho por la empresa Autonomic mind haciendo tareas de la vida real en la que se evalúa y se retroalimenta y se premia la innovación de las respuestas dadas."
+        }
+    ],
+    "education": [
+        {
+            "institution": "Universidad de Cartagena",
+            "url": "https://www.unicartagena.edu.co/",
+            "area": "Ingeniero de Sistemas",
+            "studyType": "Pregrado",
+            "startDate": "2017-07",
+            "endDate": null,
+            "score": null,
+            "courses": null
+        },
+        {
+            "institution": "Centro colombo americano",
+            "url": "https://www.colombocartagena.edu.co/",
+            "area": "Ingles como segundo idioma",
+            "studyType": "Curso",
+            "startDate": "2013",
+            "endDate": "2014",
+            "score": "C1",
+            "courses": null
+        }
+    ],
+    "languages": [
+        {
+            "language": "Spanish",
+            "fluency": "Native speaker"
+        },
+        {
+            "language": "English",
+            "fluency": "C1"
+        }
+    ],
+    "references": [
+        {
+            "name": "Jane Doe",
+            "reference": "Reference…"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Mr. Rustico",
+            "isActive": true,
+            "description": "Gestor de ordenes en tiempo real.",
+            "highlights": [
+                "Independiente",
+                "Fullstack",
+                "Next.js",
+                "Nest.js",
+                "PostgreSQL",
+                "Typescript"
+            ],
+            "url": "https://github.com/Sebmm3010/rustico-frontend",
+            "github": "https://github.com/Sebmm3010/rustico-frontend"
+        },
+        {
+            "name": "Plavih",
+            "isActive": true,
+            "description": "Plataforma de entrenamiento de personal centrada en personal hotelero.",
+            "highlights": [
+                "Frontend",
+                "Html",
+                "Css"
+            ],
+            "url": "https://plavih.com/",
+            "github": null
+        },
+        {
+            "name": "Romi call",
+            "isActive": true,
+            "description": "API de asistente de reservas potenciada con IA de OpenAi.",
+            "highlights": [
+                "Javascript",
+                "Node",
+                "IA",
+                "OpenAi",
+                "API"
+            ],
+            "url": "https://www.gehsuites.com/es",
+            "github": null
+        },
+        {
+            "name": "Romi guess",
+            "isActive": true,
+            "description": "Asistente de whatsapp que permite tomar ordenes y dar informacion sobre hoteles de la cadena GEH suites a huespedes validados en una base de datos.",
+            "highlights": [
+                "Whatsapp",
+                "Node",
+                "MongoDB",
+                "API"
+            ],
+            "url": "https://www.gehsuites.com/es",
+            "github": null
+        },
+        {
+            "name": "Blog Institucion Roman de niñez",
+            "isActive": true,
+            "description": "Blog de investigacion y desarrollo hecho para la institucion educativa soledad roman de niñez.",
+            "highlights": [
+                "Astro",
+                "Blog",
+                "Independiente"
+            ],
+            "url": "https://iesoledadromandenunez.vercel.app/",
+            "github": "https://github.com/Sebmm3010/blog-investigacion"
+        },
+        {
+            "name": "Portafolio de arte independiente",
+            "isActive": false,
+            "description": "Side proyect hecho con Astro.",
+            "highlights": [
+                "Astro",
+                "Blog",
+                "Portafolio",
+                "Side project"
+            ],
+            "url": "https://astro-blog-six-theta.vercel.app/",
+            "github": "https://github.com/Sebmm3010/astro-blog"
+        }
+    ]
+}
