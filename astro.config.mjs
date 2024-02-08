@@ -1,4 +1,9 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
+// Import /static for a static site
+import vercelStatic from "@astrojs/vercel/static";
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  // Must be 'static' or 'hybrid'
+  output: "static",
+  adapter: vercelStatic(),
+});
