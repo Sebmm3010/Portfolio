@@ -40,26 +40,20 @@ const linkedinUrl = profiles
       <footer class="no-print">
         {
           email && (
-            <a
-              href={`mailto:${email}`}
-              title={`Enviar email a ${name} al correo ${email}`}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              id="copyEmail"
+              type="button"
+              title={`Copiar ${email}`}
             >
-              <Mail title={`Enviar email a ${name} al correo ${email}`} />
-            </a>
+              <Mail title={`Copiar ${email}`} />
+            </button>
           )
         }
         {
           phone && (
-            <a
-              href={`tel:${phone}`}
-              title={`Llamar a ${name} al telefono ${email}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Phone title={`Llamar a ${name} al telefono ${email}`} />
-            </a>
+            <button id="copyTel" type="button" title={`Copiar ${phone}`}>
+              <Phone title={`Copiar ${phone}`} />
+            </button>
           )
         }
         {
@@ -96,6 +90,34 @@ const linkedinUrl = profiles
     </figure>
   </div>
 </Section>
+
+<script>
+  document.getElementById("copyEmail")?.addEventListener("click", function () {
+    const email = "rockmadero@gmail.com";
+    navigator.clipboard
+      .writeText(email)
+      .then(() => {
+        alert(`Email copiado: ${email}\nEmail copied: ${email}`);
+      })
+      .catch((err) => {
+        console.error("Error al copiar el email: ", err);
+        alert("Error al copiar el email");
+      });
+  });
+
+  document.getElementById("copyTel")?.addEventListener("click", function () {
+    const phone = "+57 300-222-6417";
+    navigator.clipboard
+      .writeText(phone)
+      .then(() => {
+        alert(`Telefono copiado: ${phone}\nPhone copied: ${phone}`);
+      })
+      .catch((err) => {
+        console.error("Error al copiar el phone: ", err);
+        alert("Error al copiar el phone");
+      });
+  });
+</script>
 
 <style>
   .container {
@@ -159,6 +181,26 @@ const linkedinUrl = profiles
   }
 
   footer a:hover {
+    background: #eee;
+    border: 1px solid #ddd;
+  }
+
+  footer button {
+    color: #777;
+    cursor: pointer;
+    background: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 4px;
+    width: 32px;
+    height: 32px;
+    transition: all 0.3s ease;
+  }
+
+  footer button:hover {
     background: #eee;
     border: 1px solid #ddd;
   }

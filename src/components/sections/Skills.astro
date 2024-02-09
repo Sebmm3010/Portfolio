@@ -1,7 +1,8 @@
 ---
 import Section from "../Section.astro";
+
+import IconAstro from "@/icons/Astro.astro";
 import Css from "@/icons/css.astro";
-import Next from "@/icons/next.astro";
 import Docker from "@/icons/docker.astro";
 import Git from "@/icons/git.astro";
 import GitHub from "@/icons/GitHub.astro";
@@ -9,6 +10,7 @@ import Html from "@/icons/html.astro";
 import JavaScript from "@/icons/javascript.astro";
 import MongoDB from "@/icons/mongo.astro";
 import Nest from "@/icons/nest.astro";
+import Next from "@/icons/next.astro";
 import Node from "@/icons/node.astro";
 import PostgresSQL from "@/icons/postgres.astro";
 import React from "@/icons/react.astro";
@@ -18,8 +20,8 @@ import TypeScript from "@/icons/type.astro";
 import { skills } from "@cv-ge";
 
 const SOCIAL_ICONS: Record<string, any> = {
+  IconAstro,
   Css,
-  Next,
   Docker,
   Git,
   GitHub,
@@ -27,6 +29,7 @@ const SOCIAL_ICONS: Record<string, any> = {
   JavaScript,
   MongoDB,
   Nest,
+  Next,
   Node,
   PostgresSQL,
   React,
@@ -59,6 +62,9 @@ const SOCIAL_ICONS: Record<string, any> = {
   }
 
   li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     border-radius: 6px;
     background: #eee;
     color: #111;

@@ -1,7 +1,92 @@
 ---
 import Section from "../Section.astro";
+import { education } from "@cv-es";
 ---
 
 <Section title="Educacion">
-  <p>texto</p>
+  <ul>
+    {
+      education.map(
+        ({ institution, url, area, studyType, startDate, endDate, score }) => {
+          const startYear = `${new Date(startDate).getFullYear()}`;
+          const endYear = endDate
+            ? `${new Date(endDate).getFullYear()}
+              `
+            : "Actualidad";
+
+          const period = `${startYear} - ${endYear}`;
+          return (
+            <li>
+              <article>
+                <header>
+                  <div>
+                    {url ? (
+                      <a href={url} target="_blank" rel="noopener noreferrer">
+                        <h3>{institution}</h3>
+                      </a>
+                    ) : (
+                      <h3>{institution}</h3>
+                    )}
+                    <h4>{area}</h4>
+                  </div>
+
+                  <time>{period}</time>
+                </header>
+
+                <footer>
+                  <p>
+                    {" "}
+                    <span>Tipo:</span> {studyType}
+                  </p>
+                  {score && (
+                    <p>
+                      <span>Nivel:</span> {score}
+                    </p>
+                  )}
+                </footer>
+              </article>
+            </li>
+          );
+        }
+      )
+    }
+  </ul>
 </Section>
+
+<style>
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  article h3 {
+    font-weight: 700;
+    color: #111;
+  }
+
+  article a:hover {
+    text-decoration: underline;
+  }
+
+  article h4 {
+    color: #161616;
+    font-weight: 600;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4px;
+  }
+
+  time {
+    color: #555;
+    font-size: 0.85rem;
+  }
+  p span {
+    font-weight: bold;
+    color: #111;
+  }
+</style>

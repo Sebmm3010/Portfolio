@@ -36,16 +36,6 @@
     ],
     "education": [
         {
-            "institution": "Universidad de Cartagena",
-            "url": "https://www.unicartagena.edu.co/",
-            "area": "Ingeniero de Sistemas",
-            "studyType": "Pregrado",
-            "startDate": "2017-07",
-            "endDate": null,
-            "score": null,
-            "courses": null
-        },
-        {
             "institution": "Centro colombo americano",
             "url": "https://www.colombocartagena.edu.co/",
             "area": "Ingles como segundo idioma",
@@ -53,6 +43,16 @@
             "startDate": "2013",
             "endDate": "2014",
             "score": "C1",
+            "courses": null
+        },
+        {
+            "institution": "Universidad de Cartagena",
+            "url": "https://www.unicartagena.edu.co/",
+            "area": "Ingeniero de Sistemas",
+            "studyType": "Pregrado",
+            "startDate": "2017",
+            "endDate": null,
+            "score": null,
             "courses": null
         }
     ],

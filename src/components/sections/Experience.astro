@@ -7,17 +7,9 @@ import { work } from "@cv-es";
   <ul>
     {
       work.map(({ name, startDate, endDate, position, summary, url }) => {
-        const startYear = `${new Date(startDate).getFullYear()}/${
-          new Date(startDate).getMonth() < 9
-            ? "0" + (new Date(startDate).getMonth() + 1)
-            : new Date(startDate).getMonth() + 1
-        }`;
+        const startYear = `${new Date(startDate).getFullYear()}`;
         const endYear = endDate
-          ? `${new Date(endDate).getFullYear()}/${
-              new Date(endDate).getMonth() < 9
-                ? "0" + (new Date(endDate).getMonth() + 1)
-                : new Date(endDate).getMonth() + 1
-            }`
+          ? `${new Date(endDate).getFullYear()}`
           : "Actualidad";
 
         const period = `${startYear} - ${endYear}`;
