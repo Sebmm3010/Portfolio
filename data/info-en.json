@@ -1,24 +1,24 @@
 {
     "informacion_personal": {
-        "label": "Full Stack Developer con multiples años de experiencia en desarrollo de software",
-        "summary": "Soy desarrollador full-stack con más de 3 años de experiencia en la industria, actualmente trabajo como Desarrollador de software en el departamento de innovación y desarrollo de la cadena hotelera Geh suites siendo líder del área de innovación enfocada a la optimización y mejora de atención con el cliente. Me especializo en frontend, en la creación de interfaces y maquetación de páginas web, siempre buscando la optimización y la escalabilidad."
+        "label": "Full Stack Developer with multiple years of experience in software development.",
+        "summary": "I am a full-stack developer with over 3 years of industry experience. Currently, I work as a Software Developer in the Innovation and Development department at Geh Suites hotel chain, where I lead the innovation area focused on optimizing and improving customer service. My specialization lies in frontend development, creating interfaces, and webpage layout, always striving for optimization and scalability."
     },
     "work": [
         {
             "name": "Geh suites",
-            "position": "Desarrollador de software",
+            "position": "Software Developer",
             "url": "https://www.gehsuites.com/es",
             "startDate": "2023-10-27",
             "endDate": null,
-            "summary": "Lidero el área del desarrollo enfocada al manejo y atención de huéspedes, desarrollando integraciones en múltiples entornos y la creación de APIS con node.js para el manejo y distribución de información, así como impulso la integración de IA para la optimización de la atención a cliente y huéspedes mediante la creación de asistente potenciados con esta tecnología."
+            "summary": "I lead the development area focused on guest management and service, developing integrations in multiple environments and creating APIs with node.js for the management and distribution of information. Additionally, I drive the integration of AI to optimize customer and guest service by creating assistants powered by this technology."
         },
         {
             "name": "Mr. Rustico",
-            "position": "Fullstack developer",
+            "position": "Full-stack developer",
             "url": null,
             "startDate": "2023-02-10",
             "endDate": "2023-08-20",
-            "summary": "Desarrolle un sistema de creación, gestión y almacenamiento de órdenes para el restaurante Mr. Rustico, creando tanto en la interfaz manejando NextJs como tecnología base del frontend enfocandome en el diseño responsivo y en el buen manejo de los datos, como el backend del que se alimenta utilizando NestJs y PostgreSQL como base de datos principal."
+            "summary": "I developed a system for the creation, management, and storage of orders for the restaurant Mr. Rustico. I created the interface using Next.js as the base technology for the frontend, focusing on responsive design and efficient data handling. For the backend, I utilized Nest.js and PostgreSQL as the main database."
         }
     ],
     "volunteer": [
@@ -35,8 +35,8 @@
         {
             "institution": "Centro colombo americano",
             "url": "https://www.colombocartagena.edu.co/",
-            "area": "Programa de ingles como idioma extranjero",
-            "studyType": "Curso",
+            "area": "English as a Foreign Language Program",
+            "studyType": "Course",
             "startDate": "2013",
             "endDate": "2014",
             "score": "C1",
@@ -45,8 +45,8 @@
         {
             "institution": "Universidad de Cartagena",
             "url": "https://www.unicartagena.edu.co/",
-            "area": "Ingeniero de Sistemas",
-            "studyType": "Pregrado",
+            "area": "Systems Engineer",
+            "studyType": "University",
             "startDate": "2017",
             "endDate": null,
             "score": null,
@@ -73,10 +73,10 @@
         {
             "name": "Mr. Rustico",
             "isActive": true,
-            "description": "Gestor de ordenes en tiempo real.",
+            "description": "Real-time order manager.",
             "highlights": [
-                "Independiente",
-                "Fullstack",
+                "Freelancer",
+                "Full-stack",
                 "Next.js",
                 "Nest.js",
                 "PostgreSQL",
@@ -88,7 +88,7 @@
         {
             "name": "Plavih",
             "isActive": true,
-            "description": "Plataforma de entrenamiento de personal centrada en personal hotelero.",
+            "description": "Training platform for hotel staff.",
             "highlights": [
                 "Frontend",
                 "Html",
@@ -100,7 +100,7 @@
         {
             "name": "Romi call",
             "isActive": true,
-            "description": "API de asistente de reservas potenciada con IA de OpenAi.",
+            "description": "OpenAI-powered reservation assistant API.",
             "highlights": [
                 "Javascript",
                 "Node",
@@ -114,7 +114,7 @@
         {
             "name": "Romi guess",
             "isActive": true,
-            "description": "Asistente de whatsapp que permite tomar ordenes y dar informacion sobre hoteles de la cadena GEH suites a huespedes validados en una base de datos.",
+            "description": "WhatsApp assistant that allows taking orders and providing information about GEH Suites hotels to validated guests in a database.",
             "highlights": [
                 "Whatsapp",
                 "Node",
@@ -127,19 +127,19 @@
         {
             "name": "Blog Institucion Roman de niñez",
             "isActive": true,
-            "description": "Blog de investigacion y desarrollo hecho para la institucion educativa soledad roman de niñez.",
+            "description": "Research and development blog created for the educational institution Soledad Roman de Niñez.",
             "highlights": [
                 "Astro",
                 "Blog",
-                "Independiente"
+                "Freelancer"
             ],
             "url": "https://iesoledadromandenunez.vercel.app/",
             "github": "https://github.com/Sebmm3010/blog-investigacion"
         },
         {
-            "name": "Portafolio de arte independiente",
+            "name": "Freelancer art portfolio",
             "isActive": false,
-            "description": "Side proyect hecho con Astro.",
+            "description": "Side project built with Astro.",
             "highlights": [
                 "Astro",
                 "Blog",

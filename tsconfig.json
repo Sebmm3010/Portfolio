@@ -9,6 +9,9 @@
       "@cv-es": [
         "./data/info-es.json"
       ],
+      "@cv-en": [
+        "./data/info-en.json"
+      ],
       "@/*": [
         "src/*"
       ]

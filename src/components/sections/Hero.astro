@@ -9,8 +9,14 @@ import WorldMap from "@/icons/WorldMap.astro";
 import { basics } from "@cv-ge";
 const { name, image, url, location, phone, email, profiles } = basics;
 const { region, city } = location;
-import { informacion_personal } from "@cv-es";
-const { label } = informacion_personal;
+// import { informacion_personal } from "@cv-es";
+// const { label } = informacion_personal;
+
+interface Props {
+  label: string;
+}
+
+const { label } = Astro.props;
 
 const SOCIAL_ICONS: Record<string, any> = {
   GitHub,
@@ -40,11 +46,7 @@ const linkedinUrl = profiles
       <footer class="no-print">
         {
           email && (
-            <button
-              id="copyEmail"
-              type="button"
-              title={`Copiar ${email}`}
-            >
+            <button id="copyEmail" type="button" title={`Copiar ${email}`}>
               <Mail title={`Copiar ${email}`} />
             </button>
           )
@@ -97,7 +99,7 @@ const linkedinUrl = profiles
     navigator.clipboard
       .writeText(email)
       .then(() => {
-        alert(`Email copiado: ${email}\nEmail copied: ${email}`);
+        alert(`Email copiado: ${email}\nCopied email: ${email}`);
       })
       .catch((err) => {
         console.error("Error al copiar el email: ", err);
@@ -110,7 +112,7 @@ const linkedinUrl = profiles
     navigator.clipboard
       .writeText(phone)
       .then(() => {
-        alert(`Telefono copiado: ${phone}\nPhone copied: ${phone}`);
+        alert(`Telefono copiado: ${phone}\nCopied phone: ${phone}`);
       })
       .catch((err) => {
         console.error("Error al copiar el phone: ", err);

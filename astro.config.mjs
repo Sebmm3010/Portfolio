@@ -1,9 +1,18 @@
 import { defineConfig } from "astro/config";
 // Import /static for a static site
-import vercelStatic from "@astrojs/vercel/static";
+import vercel from "@astrojs/vercel/serverless";
 
 export default defineConfig({
+  // Internationalization
+  i18n: {
+    defaultLocale: "es",
+    locales: ["es", "en"],
+    routing: {
+      prefixDefaultLocale: false,
+    },
+    
+  },
   // Must be 'static' or 'hybrid'
-  output: "static",
-  adapter: vercelStatic(),
+  output: "server",
+  adapter: vercel(),
 });

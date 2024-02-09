@@ -9,20 +9,20 @@ import KeyBoardManager from "@/components/KeyBoardManager.astro";
 import Projects from "@/components/sections/Projects.astro";
 import Skills from "@/components/sections/Skills.astro";
 
-import { informacion_personal, work, projects, education } from "@cv-es";
+import { informacion_personal, work, projects, education } from "@cv-en";
 const { label, summary } = informacion_personal;
 ---
 
-<Layout title="Portafolio - Sebastian madero">
+<Layout title="Portfolio - Sebastian madero">
   <main>
     <Hero label={label} />
-    <About summary={summary} title="Sobre mi" />
-    <Skills title="Habilidades" />
-    <Experience work={work} , title="Experiencia" english={false} />
-    <Projects title="Proyectos" , projects={projects} />
-    <Education education={education} title="Educacion" english={false} />
+    <About summary={summary} title="About" />
+    <Skills title="Skills" />
+    <Experience work={work} , title="Experiencia" english={true} />
+    <Projects title="Projects" , projects={projects} />
+    <Education education={education} title="Education" english={true} />
   </main>
-  <KeyBoardManager english={false} />
+  <KeyBoardManager english={true} />
 </Layout>
 
 <style>

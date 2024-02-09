@@ -1,16 +1,42 @@
 ---
 import Section from "../Section.astro";
-import { work } from "@cv-es";
+
+interface Props {
+  title: string;
+  english: boolean;
+  work: (
+    | {
+        name: string;
+        position: string;
+        url: string;
+        startDate: string;
+        endDate: null;
+        summary: string;
+      }
+    | {
+        name: string;
+        position: string;
+        url: null;
+        startDate: string;
+        endDate: string;
+        summary: string;
+      }
+  )[];
+}
+
+const { title, work, english } = Astro.props;
 ---
 
-<Section title="Experiencia">
+<Section title={title}>
   <ul>
     {
       work.map(({ name, startDate, endDate, position, summary, url }) => {
         const startYear = `${new Date(startDate).getFullYear()}`;
         const endYear = endDate
           ? `${new Date(endDate).getFullYear()}`
-          : "Actualidad";
+          : english
+            ? "Present"
+            : "Actualidad";
 
         const period = `${startYear} - ${endYear}`;
         return (

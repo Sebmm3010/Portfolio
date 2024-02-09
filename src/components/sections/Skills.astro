@@ -19,6 +19,12 @@ import TypeScript from "@/icons/type.astro";
 
 import { skills } from "@cv-ge";
 
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+
 const SOCIAL_ICONS: Record<string, any> = {
   IconAstro,
   Css,
@@ -38,7 +44,7 @@ const SOCIAL_ICONS: Record<string, any> = {
 };
 ---
 
-<Section title="Skills">
+<Section title={title}>
   <ul>
     {
       skills.map(({ name, icon }) => {

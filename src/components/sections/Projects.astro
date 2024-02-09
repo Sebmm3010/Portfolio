@@ -1,10 +1,33 @@
 ---
 import Section from "../Section.astro";
 import GitHub from "@/icons/GitHub.astro";
-import { projects } from "@cv-es";
+
+interface Props {
+  title: string;
+  projects: (
+    | {
+        name: string;
+        isActive: boolean;
+        description: string;
+        highlights: string[];
+        url: string;
+        github: string;
+      }
+    | {
+        name: string;
+        isActive: boolean;
+        description: string;
+        highlights: string[];
+        url: string;
+        github: null;
+      }
+  )[];
+}
+
+const { projects, title } = Astro.props;
 ---
 
-<Section title="Proyectos">
+<Section title={title}>
   <ul>
     {
       projects.map(
