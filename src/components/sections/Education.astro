@@ -66,11 +66,11 @@ const { education, title, english } = Astro.props;
                 <footer>
                   <p>
                     {" "}
-                    <span>Tipo:</span> {studyType}
+                    <span>{english ? "Type:" : "Tipo"}</span> {studyType}
                   </p>
                   {score && (
                     <p>
-                      <span>Nivel:</span> {score}
+                      <span>{english ? "Level" : "Nivel"}</span> {score}
                     </p>
                   )}
                 </footer>
