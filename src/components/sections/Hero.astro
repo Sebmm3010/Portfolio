@@ -46,8 +46,8 @@ const formatedUrl = url.split("w.")[1];
       <footer class="no-print">
         {
           email && (
-            <button id="copyEmail" type="button" title={`Copiar ${email}`}>
-              <Mail title={english ? `Copy ${email}` : `Copiar ${email}`} />
+            <button id="copyEmail" type="button" title={`Copiar Email`}>
+              <Mail title={english ? `Copy Email` : `Copiar Email`} />
             </button>
           )
         }
@@ -99,7 +99,7 @@ const formatedUrl = url.split("w.")[1];
     navigator.clipboard
       .writeText(email)
       .then(() => {
-        alert(`Email copiado: ${email}\nCopied email: ${email}`);
+        alert(`✉️ Email copiado\n✉️ Copied email`);
       })
       .catch((err) => {
         console.error("Error al copiar el email: ", err);
