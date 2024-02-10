@@ -134,10 +134,10 @@ const profilesInfo = profiles.map(({ network, url }) => {
         section: parsedEnglish ? "Navigation" : "Navegacion",
         handler: parsedEnglish
           ? () => {
-              window.open("/");
+              window.location.href = "/";
             }
           : () => {
-              window.open("/en");
+              window.location.href = "/en";
             },
       },
       ...data,
@@ -168,9 +168,6 @@ const profilesInfo = profiles.map(({ network, url }) => {
     footer {
       display: none;
     }
-    /* ninja-keys {
-      display: none;
-    } */
   }
 
   kbd {
