@@ -90,7 +90,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
 </svg>
 `,
         hotkey: "Ctrl + P",
-        section: parsedEnglish ? "Actions": "Acciones",
+        section: parsedEnglish ? "Actions" : "Acciones",
         handler: () => {
           window.print();
         },
@@ -104,7 +104,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
 </svg>
 `,
         hotkey: "Ctrl + m",
-        section: parsedEnglish ? "Actions": "Acciones",
+        section: parsedEnglish ? "Actions" : "Acciones",
         handler: () => {
           window.open("mailto:rockmadero@gmail.com");
         },
@@ -118,7 +118,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
 
 `,
         hotkey: "Ctrl + q",
-        section: parsedEnglish ? "Actions": "Acciones",
+        section: parsedEnglish ? "Actions" : "Acciones",
         handler: () => {
           window.open("tel:+57-3002226417");
         },
@@ -137,7 +137,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
               window.location.href = "/";
             }
           : () => {
-              window.location.href = "/en";
+              window.location.href = "/en/";
             },
       },
       ...data,

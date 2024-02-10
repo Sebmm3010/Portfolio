@@ -1,47 +1,80 @@
-# Astro Starter Kit: Minimal
+<div align="center">
+<img src="./public/favicon.ico" height="90px" width="auto" /> 
+<h2>
+    Hoja de vida/Portafolio.
+</h2>
 
-```sh
-npm create astro@latest -- --template minimal
+<p>
+Basado en el diseño de <a href="https://github.com/midudev/minimalist-portfolio-json">Midudev</a>
+</p>
+
+</div>
+
+<div align="center">
+    <a href="#🚀-empezar">
+        Empezar
+    </a>
+    <span>&nbsp;✦&nbsp;</span>
+    <a href="#🧞-comandos">
+        Comandos
+    </a>
+    <span>&nbsp;✦&nbsp;</span>
+    <a href="#🔑-licencia">
+        Licencia
+    </a>
+    <span>&nbsp;✦&nbsp;</span>
+    <a href="https://midu.dev">
+        Personal
+    </a>
+   
+</div>
+
+## Descripcion
+
+<p>Portafolio minimalista con ventana de comando, e internacionalización en ingles y español.</p>
+
+<img src="./public/portada.png"></img>
+
+## 🛠️ Stack
+
+- [**Astro**](https://astro.build/)
+- [**Typescript**](https://www.typescriptlang.org/)
+- [**Ninja Keys**](https://github.com/ssleptsov/ninja-keys)
+
+
+## Empezar
+
+### 1. Clonar este [repositorio](https://github.com/Sebmm3010/Portfolio).
+
+
+- Instalar dependecias.
+
+### 2. Cambiar contenido:
+Edita contenido de los archivos `info-ge.json`, `info-es.json`, `info-es.json` para editar el portafolio en español y en ingles.
+### 3. Lanza el servidor de desarrollo:
+
+```bash
+npm run dev
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+1. Abre [**http://localhost:4321**](http://localhost:4321/).
 
-## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
+## 🧞 Commandos
 
 All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `npm install`             | Instalar dependecias                            |
+| `npm run dev`             | Iniciar servidor de desarrollo `localhost:4321`      |
+| `npm run build`           | Construir sitio en produccion en la capeta `./dist/`          |
+| `npm run preview`         | Preview del build de produccion     |
 
-## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+
+## 🔑 Licencia
+
+[MIT](LICENSE.txt) - Creado por [**Sebmm301**](https://www.sebasdevtech.com).
