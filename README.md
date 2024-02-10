@@ -22,10 +22,6 @@ Basado en el diseño de <a href="https://github.com/midudev/minimalist-portfolio
     <a href="#🔑-licencia">
         Licencia
     </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="https://midu.dev">
-        Personal
-    </a>
    
 </div>
 
@@ -61,7 +57,7 @@ npm run dev
 1. Abre [**http://localhost:4321**](http://localhost:4321/).
 
 
-## 🧞 Commandos
+## 🧞 Comandos
 
 All commands are run from the root of the project, from a terminal:
 
