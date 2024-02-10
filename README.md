@@ -73,4 +73,4 @@ All commands are run from the root of the project, from a terminal:
 
 ## 🔑 Licencia
 
-[MIT](LICENSE.txt) - Creado por [**Sebmm301**](https://www.sebasdevtech.com).
+[MIT](LICENSE.txt) - Creado por [**Sebastian madero**](https://www.sebasdevtech.com).
