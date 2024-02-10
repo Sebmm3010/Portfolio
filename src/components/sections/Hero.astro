@@ -25,6 +25,7 @@ const SOCIAL_ICONS: Record<string, any> = {
 const linkedinUrl = profiles
   .find(({ network }) => network === "LinkedIn")
   ?.url.split("w.")[1];
+const formatedUrl = url.split("w.")[1];
 ---
 
 <Section>
@@ -39,7 +40,7 @@ const linkedinUrl = profiles
       <footer class="print print-info">
         -Mail: {email}
         <br /> -Tel: {phone}
-        <br /> -Website: {url}
+        <br /> -Website: {formatedUrl}
         <br />-Linkedin: {linkedinUrl}
       </footer>
       <footer class="no-print">
