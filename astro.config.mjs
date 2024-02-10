@@ -4,13 +4,13 @@ import vercel from "@astrojs/vercel/serverless";
 
 export default defineConfig({
   // Internationalization
-  // i18n: {
-  //   defaultLocale: "es",
-  //   locales: ["es", "en"],
-  //   routing: {
-  //     prefixDefaultLocale: true,
-  //   },
-  // },
+  i18n: {
+    defaultLocale: "es",
+    locales: ["es", "en"],
+    routing: {
+      prefixDefaultLocale: true,
+    },
+  },
   // Must be 'static' or 'hybrid'
   output: "server",
   adapter: vercel(),

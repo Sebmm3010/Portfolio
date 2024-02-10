@@ -1,0 +1,36 @@
+---
+import Layout from "@/layouts/Layout.astro";
+
+import About from "@/components/sections/About.astro";
+import Education from "@/components/sections/Education.astro";
+import Experience from "@/components/sections/Experience.astro";
+import Hero from "@/components/sections/Hero.astro";
+import KeyBoardManager from "@/components/KeyBoardManager.astro";
+import Projects from "@/components/sections/Projects.astro";
+import Skills from "@/components/sections/Skills.astro";
+import MobileCommandButton from "@/components/MobileCommandButton.astro";
+
+import { informacion_personal, work, projects, education } from "@cv-es";
+const { label, summary } = informacion_personal;
+---
+
+<Layout title="Portafolio - Sebastian madero" locale="es">
+  <main>
+    <Hero label={label} english={false} />
+    <About summary={summary} title="Sobre mi" />
+    <Skills title="Habilidades" />
+    <Experience work={work} , title="Experiencia" english={false} />
+    <Projects title="Proyectos" , projects={projects} />
+    <Education education={education} title="Educacion" english={false} />
+    <MobileCommandButton />
+  </main>
+  <KeyBoardManager english={false} />
+</Layout>
+
+<style>
+  main {
+    padding: 4rem;
+    margin: auto;
+    width: 100%;
+  }
+</style>
