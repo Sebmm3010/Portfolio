@@ -50,7 +50,7 @@ Basado en el diseño de <a href="https://github.com/midudev/minimalist-portfolio
 - Instalar dependecias.
 
 ### 2. Cambiar contenido:
-Edita contenido de los archivos `info-ge.json`, `info-es.json`, `info-es.json` para editar el portafolio en español y en ingles.
+Edita contenido de los archivos `info-ge.json`, `info-es.json`, `info-en.json` para editar el portafolio en español y en ingles.
 ### 3. Lanza el servidor de desarrollo:
 
 ```bash
