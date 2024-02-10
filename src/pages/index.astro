@@ -8,6 +8,7 @@ import Hero from "@/components/sections/Hero.astro";
 import KeyBoardManager from "@/components/KeyBoardManager.astro";
 import Projects from "@/components/sections/Projects.astro";
 import Skills from "@/components/sections/Skills.astro";
+import MobileCommandButton from "@/components/MobileCommandButton.astro";
 
 import { informacion_personal, work, projects, education } from "@cv-es";
 const { label, summary } = informacion_personal;
@@ -15,12 +16,13 @@ const { label, summary } = informacion_personal;
 
 <Layout title="Portafolio - Sebastian madero">
   <main>
-    <Hero label={label} />
+    <Hero label={label} english={false} />
     <About summary={summary} title="Sobre mi" />
     <Skills title="Habilidades" />
     <Experience work={work} , title="Experiencia" english={false} />
     <Projects title="Proyectos" , projects={projects} />
     <Education education={education} title="Educacion" english={false} />
+    <MobileCommandButton english={false} />
   </main>
   <KeyBoardManager english={false} />
 </Layout>

@@ -42,7 +42,7 @@ const { education, title, english } = Astro.props;
               `
             : english
               ? "Present"
-              : "Actualidad";
+              : "Actual";
 
           const period = `${startYear} - ${endYear}`;
           return (
@@ -66,11 +66,11 @@ const { education, title, english } = Astro.props;
                 <footer>
                   <p>
                     {" "}
-                    <span>{english ? "Type:" : "Tipo"}</span> {studyType}
+                    <span>{english ? "Type:" : "Tipo:"}</span> {studyType}
                   </p>
                   {score && (
                     <p>
-                      <span>{english ? "Level" : "Nivel"}</span> {score}
+                      <span>{english ? "Level:" : "Nivel:"}</span> {score}
                     </p>
                   )}
                 </footer>

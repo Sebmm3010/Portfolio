@@ -9,14 +9,13 @@ import WorldMap from "@/icons/WorldMap.astro";
 import { basics } from "@cv-ge";
 const { name, image, url, location, phone, email, profiles } = basics;
 const { region, city } = location;
-// import { informacion_personal } from "@cv-es";
-// const { label } = informacion_personal;
 
 interface Props {
   label: string;
+  english: boolean;
 }
 
-const { label } = Astro.props;
+const { label, english } = Astro.props;
 
 const SOCIAL_ICONS: Record<string, any> = {
   GitHub,
@@ -47,14 +46,14 @@ const linkedinUrl = profiles
         {
           email && (
             <button id="copyEmail" type="button" title={`Copiar ${email}`}>
-              <Mail title={`Copiar ${email}`} />
+              <Mail title={english ? `Copy ${email}` : `Copiar ${email}`} />
             </button>
           )
         }
         {
           phone && (
             <button id="copyTel" type="button" title={`Copiar ${phone}`}>
-              <Phone title={`Copiar ${phone}`} />
+              <Phone title={english ? `Copy ${phone}` : `Copiar ${phone}`} />
             </button>
           )
         }
@@ -127,6 +126,13 @@ const linkedinUrl = profiles
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+  }
+
+  @media only screen and (max-width: 767px) {
+    /* Estilos específicos para teléfonos */
+    .container {
+      flex-direction: column-reverse;
+    }
   }
 
   .info {
