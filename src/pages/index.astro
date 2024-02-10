@@ -14,7 +14,7 @@ import { informacion_personal, work, projects, education } from "@cv-es";
 const { label, summary } = informacion_personal;
 ---
 
-<Layout title="Portafolio - Sebastian madero">
+<Layout title="Portafolio - Sebastian madero" locale="es">
   <main>
     <Hero label={label} english={false} />
     <About summary={summary} title="Sobre mi" />
@@ -22,7 +22,7 @@ const { label, summary } = informacion_personal;
     <Experience work={work} , title="Experiencia" english={false} />
     <Projects title="Proyectos" , projects={projects} />
     <Education education={education} title="Educacion" english={false} />
-    <MobileCommandButton english={false} />
+    <MobileCommandButton />
   </main>
   <KeyBoardManager english={false} />
 </Layout>

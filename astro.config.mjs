@@ -8,9 +8,8 @@ export default defineConfig({
   //   defaultLocale: "es",
   //   locales: ["es", "en"],
   //   routing: {
-  //     prefixDefaultLocale: false,
+  //     prefixDefaultLocale: true,
   //   },
-
   // },
   // Must be 'static' or 'hybrid'
   output: "server",
