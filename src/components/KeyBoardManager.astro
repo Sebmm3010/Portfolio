@@ -1,7 +1,7 @@
 ---
 import { basics } from "@cv-ge";
 
-const { profiles } = basics;
+const { profiles, email, phone } = basics;
 
 interface Props {
   english: boolean;
@@ -56,6 +56,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
 </footer>
 
 <ninja-keys
+  contact-info={JSON.stringify({ email, phone })}
   data-info={JSON.stringify(profilesInfo)}
   english={JSON.stringify(english)}
   placeholder={english ? "Search command..." : "Buscar comando..."}
@@ -68,8 +69,10 @@ const profilesInfo = profiles.map(({ network, url }) => {
 
   const info = ninja?.getAttribute("data-info") || "[]";
   const english = ninja?.getAttribute("english") || "[]";
+  const contactInfo = ninja?.getAttribute("contact-info") || "[]";
   const parsedInfo = JSON.parse(info);
   const parsedEnglish = JSON.parse(english);
+  const { email, phone } = JSON.parse(contactInfo);
 
   const data = parsedInfo.map((item: any) => {
     return {
@@ -106,7 +109,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
         hotkey: "Ctrl + m",
         section: parsedEnglish ? "Actions" : "Acciones",
         handler: () => {
-          window.open("mailto:rockmadero@gmail.com");
+          window.open(`mailto:${email}`);
         },
       },
       {
@@ -134,11 +137,11 @@ const profilesInfo = profiles.map(({ network, url }) => {
         handler: () => {
           parsedEnglish
             ? window.open(
-                "https://wa.me/+573002226417?text=Hi%20how%20are%20you?",
+                `https://wa.me/${phone}?text=Hi%20how%20are%20you?`,
                 "_blank"
               )
             : window.open(
-                "https://wa.me/+573002226417?text=Hola%20como%20estas?",
+                `https://wa.me/${phone}?text=Hola%20como%20estas?`,
                 "_blank"
               );
         },

@@ -43,7 +43,11 @@ const formatedUrl = url.split("w.")[1];
         <br /> -Website: {formatedUrl}
         <br />-Linkedin: {linkedinUrl}
       </footer>
-      <footer class="no-print">
+      <footer
+        class="no-print"
+        id="contact-buttons"
+        contact-info={JSON.stringify({ email, phone })}
+      >
         {
           email && (
             <button id="copyEmail" type="button" title={`Copiar Email`}>
@@ -94,12 +98,18 @@ const formatedUrl = url.split("w.")[1];
 </Section>
 
 <script>
+  const contactButtons = document.getElementById("contact-buttons");
+  const contactInfo = contactButtons?.getAttribute("contact-info") || "[]";
+  const { email, phone } = JSON.parse(contactInfo);
+
   document.getElementById("copyEmail")?.addEventListener("click", function () {
-    const email = "rockmadero@gmail.com";
+    const emailToCopy = email || "sebastiandevmm@gmail.com";
     navigator.clipboard
-      .writeText(email)
+      .writeText(emailToCopy)
       .then(() => {
-        alert(`✉️ Email copiado\n✉️ Copied email`);
+        alert(
+          `✉️ Email copiado: ${emailToCopy}\n✉️ Copied email: ${emailToCopy}`
+        );
       })
       .catch((err) => {
         console.error("Error al copiar el email: ", err);
@@ -108,11 +118,11 @@ const formatedUrl = url.split("w.")[1];
   });
 
   document.getElementById("copyTel")?.addEventListener("click", function () {
-    const phone = "+57 300-222-6417";
+    const phoneToCopy = phone || "+57 300-222-6417";
     navigator.clipboard
-      .writeText(phone)
+      .writeText(phoneToCopy)
       .then(() => {
-        alert(`Telefono copiado: ${phone}\nCopied phone: ${phone}`);
+        alert(`Telefono copiado: ${phoneToCopy}\nCopied phone: ${phoneToCopy}`);
       })
       .catch((err) => {
         console.error("Error al copiar el phone: ", err);
