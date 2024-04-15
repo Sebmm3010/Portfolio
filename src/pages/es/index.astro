@@ -10,7 +10,14 @@ import Projects from "@/components/sections/Projects.astro";
 import Skills from "@/components/sections/Skills.astro";
 import MobileCommandButton from "@/components/MobileCommandButton.astro";
 
-import { informacion_personal, work, projects, education } from "@cv-es";
+import {
+  informacion_personal,
+  work,
+  projects,
+  education,
+  references,
+} from "@cv-es";
+import References from "@/components/sections/References.astro";
 const { label, summary } = informacion_personal;
 ---
 
@@ -19,9 +26,10 @@ const { label, summary } = informacion_personal;
     <Hero label={label} english={false} />
     <About summary={summary} title="Sobre mi" />
     <Skills title="Habilidades" />
+    <Education education={education} title="Educacion" english={false} />
     <Experience work={work} , title="Experiencia" english={false} />
     <Projects title="Proyectos" , projects={projects} />
-    <Education education={education} title="Educacion" english={false} />
+    <References title="Referencias" references={references} />
     <MobileCommandButton />
   </main>
   <KeyBoardManager english={false} />

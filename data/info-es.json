@@ -65,17 +65,22 @@
     ],
     "references": [
         {
-            "name": "Jane Doe",
-            "reference": "Reference…"
+            "name": "Alejandro Dussan",
+            "ocupation": "CEO GEH Suites Hotels.",
+            "url": "https://www.linkedin.com/in/alejandro-dussan-74242aa6/"
+        },
+        {
+            "name": "Rosemberg Cardales Guerrero",
+            "ocupation": "Desarrollador de software - Geh Suites.",
+            "url":"https://linkedin.com/in/rosemberg-cardales-guerrero-5ab673221/"
         }
     ],
     "projects": [
         {
             "name": "Mr. Rustico",
             "isActive": true,
-            "description": "Gestor de ordenes en tiempo real.",
+            "description": "Sistema de gestion de ordenes fullstack. Permite generar ordenes desde la mesa de cliente a concina, mantener registro de ordenes y manejo total de estadisticas con un dashboard administrativo.",
             "highlights": [
-                "Independiente",
                 "Fullstack",
                 "Next.js",
                 "Nest.js",
@@ -88,7 +93,7 @@
         {
             "name": "Plavih",
             "isActive": true,
-            "description": "Plataforma de entrenamiento de personal centrada en personal hotelero.",
+            "description": "Plataforma de entrenamiento de personal centrada en personal hotelero con la que se puedo aumentar un 25% la calidad de asistencia y trato al cliente de los empleados dentro de los hoteles.",
             "highlights": [
                 "Frontend",
                 "Html",
@@ -100,34 +105,22 @@
         {
             "name": "Romi call",
             "isActive": true,
-            "description": "API de asistente de reservas potenciada con IA de OpenAi.",
+            "description": "Asistente telefonico de reservas potenciado con OpenaAi, gracias a este se redujo un 20% la carga de trabajo en el area de call centers, asi como un aumento en la cantidad de reservas confirmadas de un 15% en tan solo 2 meses.",
             "highlights": [
+                "API",
+                "Backend",
+                "IA",
                 "Javascript",
                 "Node",
-                "IA",
-                "OpenAi",
-                "API"
+                "OpenAi"
             ],
             "url": "https://www.gehsuites.com/es",
             "github": null
         },
         {
-            "name": "Romi guess",
+            "name": "Blog Institucion Roman de nuñez",
             "isActive": true,
-            "description": "Asistente de whatsapp que permite tomar ordenes y dar informacion sobre hoteles de la cadena GEH suites a huespedes validados en una base de datos.",
-            "highlights": [
-                "Whatsapp",
-                "Node",
-                "MongoDB",
-                "API"
-            ],
-            "url": "https://www.gehsuites.com/es",
-            "github": null
-        },
-        {
-            "name": "Blog Institucion Roman de niñez",
-            "isActive": true,
-            "description": "Blog de investigacion y desarrollo hecho para la institucion educativa soledad roman de niñez.",
+            "description": "Blog de investigacion y desarrollo hecho para la institucion educativa soledad roman de nuñez, el cual fue usado para difundir investigaciones en el MILSET Expo-Sciences International 2023 evento de robotica donde se participo.",
             "highlights": [
                 "Astro",
                 "Blog",
@@ -139,7 +132,7 @@
         {
             "name": "Portafolio de arte independiente",
             "isActive": false,
-            "description": "Side proyect hecho con Astro.",
+            "description": "Portafolio de arte que permite exposicion y comunicacion mediante formulario.",
             "highlights": [
                 "Astro",
                 "Blog",

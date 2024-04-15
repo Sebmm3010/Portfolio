@@ -1,0 +1,98 @@
+---
+import Section from "../Section.astro";
+import algo from "../../../data/info-en.json";
+interface Props {
+  title: string;
+  references: {
+    name: string;
+    ocupation: string;
+    url: string;
+  }[];
+}
+algo.references;
+const { title, references } = Astro.props;
+---
+
+<Section title={title}>
+  <ul>
+    {
+      references.map(({ name, ocupation, url }) => {
+        return (
+          <li>
+            <article>
+              <header>
+                <div class="container">
+                  <span>
+                    <h3>{name}</h3>
+                  </span>
+                  <h4>{ocupation}</h4>
+                </div>
+              </header>
+
+              <footer>
+                <p>
+                  <span>
+                    <a href={url} target="_blank" rel="noopener noreferrer">
+                      Linkedin
+                    </a>
+                  </span>
+                </p>
+              </footer>
+            </article>
+          </li>
+        );
+      })
+    }
+  </ul>
+</Section>
+
+<style>
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  article h3 {
+    font-weight: 700;
+    color: #111;
+  }
+
+  article a:hover {
+    text-decoration: underline;
+  }
+
+  article h4 {
+    color: #161616;
+    font-weight: 600;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4px;
+  }
+
+  time {
+    color: #555;
+    font-size: 0.85rem;
+  }
+  p span {
+    font-weight: bold;
+    color: #111;
+  }
+  .container {
+    padding: 1rem 0;
+  }
+  a {
+    color: #eee;
+    background: #126bc4;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 6px;
+    width: 32px;
+    height: 32px;
+    transition: all 0.3s ease;
+  }
+</style>
