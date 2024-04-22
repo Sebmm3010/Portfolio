@@ -32,9 +32,15 @@ const { title, references } = Astro.props;
               <footer>
                 <p>
                   <span>
-                    <a href={url} target="_blank" rel="noopener noreferrer">
+                    <a
+                      class="no-print"
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Linkedin
                     </a>
+                    <p class="print">{url}</p>
                   </span>
                 </p>
               </footer>
